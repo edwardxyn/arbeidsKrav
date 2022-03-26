@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Hello World!</title>
-</head>
-<body>
-    <h1>Handleliste</h1>
-    <p>Norges *beste* handleliste app</p>
-    
-<div class="box-container">
-     <div class="box1">
-       <li></li>
-       <li></li>
-       <li></li>
-       <li></li>
-       <li></li>
-       <li></li>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="header-txt">Handleliste</h1>
+      <p class="under-txt">Norges *beste* handleliste app</p>
     </div>
 
-    <div class="box2">
-        <li></li>
-        <li></li>
-        <li></li>        
-        <li></li>
-        <li></li>
-        <li></li>
-    </div>
+    <div class="box-container">
+      <div id="box1">
+            <form id="new-food-form">
+                <input type="text" id="new-food-input" placeholder="Dette er det tomt for på Kjøkkenet">
+                <input type="submit" id="new-food-submit" value="Legg til">
+            </form>
+            <p id="newfoodtxt">hei</p>
+      </div>
 
-    <div class="box3">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </div>
-</div>
+      <div id="box2">
+            <form id="soon-food-form">
+                <input type="text" id="soon-food-input" placeholder="Dette er det snart tomt for">
+                <input type="submit" id="soon-food-submit" value="Legg til">
+            </form>
+        </div>
 
-</body>
+      <div id="box3">
+            <form id="old-food-form">
+                <input type="text" id="old-food-input" placeholder="Dette har jeg nok av">
+                <input type="submit" id="old-food-submit" value="Legg til">
+            </form>
+            
+        <script src="main.js"></script>
+        </div>
+    </div>
+  </body>
 </html>

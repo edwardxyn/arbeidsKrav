@@ -1,22 +1,60 @@
+.header {
+    padding: 0px 50px;
+
+}
+.header-txt {
+    font-size: 50px;
+}
+.under-txt {
+    font: italic;
+    font-size: x-large;
+}
+
+
+
 .box-container {
     display: flex;
 }
-.box1 {
+#box1 {
     width: 800px;
-    height:800px;
+    height: 700px;
     margin: 20px;
     background-color: aqua;
 }
-.box2 {
+#box2 {
     width: 800px;
-    height:800px;
+    height:700px;
     margin: 20px;
     background-color: aqua;
 }
-.box3 {
+#box3 {
     width: 800px;
-    height:800px;
+    height:700px;
     margin: 20px;
     background-color: aqua;
+}
+
+#new-food-input {
+    width: 500px;
+    padding: 9px;
+}
+#new-food-submit {
+    padding: 9px;
+}
+
+#soon-food-input {
+    width: 500px;
+    padding: 9px;
+}
+#soon-food-submit {
+    padding: 9px;
+}
+
+#old-food-input {
+    width: 500px;
+    padding: 9px;
+}
+#old-food-submit {
+    padding: 9px;
 }
 
