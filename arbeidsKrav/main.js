@@ -1,3 +1,5 @@
+alert("Hei og velkommen!!");
+
 let boxContainer = document.getElementById ("food-list1")
 let foodList = document.getElementById ("list-txt")
 
@@ -21,7 +23,18 @@ function listFoods() {
     for (let i = 0; i < listArray.length; i++){
         foodList.innerHTML += `<li><h1>${listArray[i].name}</h1>
         <h2>${listArray[i].price}</h2>
-        <button id="delete-btn" onclick=""></button></li>`;
+        <button id="delete-btn" onclick="deleteFood(${i})">Slett</button></li>`;
     }
 }
+
+function deleteFood (i) {
+    var check = confirm("Er du sikker?")
+    if (check == true) {
+        listArray.splice(i, 1);
+        listFoods();
+    }
+    
+}
+
+
 
