@@ -1,4 +1,4 @@
-alert("Hei og velkommen!!");
+alert("Hei og velkommen!! Dette er en handleliste der du kan legge til det du må kjøpe/snart trenger/allerede har.");
 
 let boxContainer = document.getElementById ("food-list1")
 let foodList = document.getElementById ("list-txt")
@@ -23,6 +23,8 @@ function addFood () {
     }
     
     listFoods();
+    sumPrice.innerHTML += `Sum = ${(listArray, foodPriceInput)}`
+    console.log(listArray, foodPriceInput)
 
 }
 
