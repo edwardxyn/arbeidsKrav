@@ -1,0 +1,22 @@
+.box-container {
+    display: flex;
+}
+.box1 {
+    width: 800px;
+    height:800px;
+    margin: 20px;
+    background-color: aqua;
+}
+.box2 {
+    width: 800px;
+    height:800px;
+    margin: 20px;
+    background-color: aqua;
+}
+.box3 {
+    width: 800px;
+    height:800px;
+    margin: 20px;
+    background-color: aqua;
+}
+
