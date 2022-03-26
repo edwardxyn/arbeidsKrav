@@ -2,6 +2,9 @@ alert("Hei og velkommen!!");
 
 let boxContainer = document.getElementById ("food-list1")
 let foodList = document.getElementById ("list-txt")
+let sumPrice = document.getElementById ("sum")
+
+
 
 listArray = [];
 
@@ -14,8 +17,13 @@ function addFood () {
         name: foodNameInput,
         price: foodPriceInput,
     });
-
+    if (foodPriceInput < 1) {
+        listFoods == false
+        alert("Prisen kan ikke være null!")
+    }
+    
     listFoods();
+
 }
 
 function listFoods() {
@@ -35,6 +43,15 @@ function deleteFood (i) {
     }
     
 }
+
+
+
+
+
+
+
+
+
 
 
 
