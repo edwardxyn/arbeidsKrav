@@ -1,58 +1,57 @@
-
 body {
-    background-image: linear-gradient(120deg, #f6d365, #fda085);
-    font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
+  background-image: linear-gradient(120deg, #f6d365, #fda085);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
 }
 .header {
-    padding: 20px 50px;
+  padding: 20px 50px;
 }
 .header-txt {
-    font-size: 50px;
+  font-size: 50px;
 }
 .under-txt {
-    font: italic;
-    font-size: x-large;
+  font: italic;
+  font-size: x-large;
 }
 
 .box-container {
-    display: flex;
+  display: flex;
 }
 #box1 {
-    width: 800px;
-    height: auto;
-    margin: 20px;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
+  width: 800px;
+  height: auto;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
 }
 #box2 {
-    width: 800px;
-    height: auto;
-    margin: 20px;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
+  width: 800px;
+  height: auto;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
 }
 #box3 {
-    width: 800px;
-    height: 650px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
+  width: 800px;
+  height: 650px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 input {
-    padding: 15px;
-    border: none;
+  padding: 15px;
+  border: none;
 }
 
 button {
-    padding: 10px;
-    background: black;
-    color: white;
-    border-radius: 30px;
-    transition: transform 0.3s ease;
+  padding: 10px;
+  background: black;
+  color: white;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
 }
 
