@@ -14,29 +14,27 @@
     </div>
 
     <div class="box-container">
-      <div id="box1">
-            <form id="new-food-form">
-                <input type="text" id="new-food-input" placeholder="Dette er det tomt for på Kjøkkenet">
-                <input type="submit" id="new-food-submit" value="Legg til">
-            </form>
-            <p id="newfoodtxt">hei</p>
-      </div>
-
-      <div id="box2">
-            <form id="soon-food-form">
-                <input type="text" id="soon-food-input" placeholder="Dette er det snart tomt for">
-                <input type="submit" id="soon-food-submit" value="Legg til">
-            </form>
-        </div>
-
-      <div id="box3">
-            <form id="old-food-form">
-                <input type="text" id="old-food-input" placeholder="Dette har jeg nok av">
-                <input type="submit" id="old-food-submit" value="Legg til">
-            </form>
+        <div id="box1">
+            <div id="food-list1">
+                <input type="text" id="food-name-input" placeholder="Hva trenger du?">
+                <input type="text" id="food-price-input" placeholder="Pris">
+                <button onclick="addFood()">Legg til</button>
+            </div>
+            <ul id="list-txt"></ul>
             
-        <script src="main.js"></script>
         </div>
+        <div id="box2">
+            <!-- <input type="text" id="food-name-input" placeholder="Hva trenger du?">
+            <input type="text" id="food-price-input" placeholder="Pris">
+            <button onclick="">Legg til</button> -->
+        </div>
+        <div id="box3">
+            <!-- <input type="text" id="food-name-input" placeholder="Hva trenger du?">
+            <input type="text" id="food-price-input" placeholder="Pris">
+            <button onclick="">Legg til</button> -->
+        </div>
+            
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
