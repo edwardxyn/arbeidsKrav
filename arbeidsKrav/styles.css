@@ -49,9 +49,10 @@ input {
 
 button {
   padding: 10px;
-  background: black;
-  color: white;
+  background: #f6d365;
+  color: black;
   border-radius: 30px;
   transition: transform 0.3s ease;
+  border: none;
 }
 
