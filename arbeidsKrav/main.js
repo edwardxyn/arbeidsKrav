@@ -5,25 +5,30 @@ alert(
 let boxContainer = document.getElementById("food-list1");
 let foodList = document.getElementById("list-txt");
 let sumPrice = document.getElementById("sum");
+let total = 0;
 
 listArray = [];
+
+
 
 function addFood() {
   let foodNameInput = document.getElementById("food-name-input").value;
   let foodPriceInput = document.getElementById("food-price-input").value;
-
+  
+  
+  
   listArray.push({
     name: foodNameInput,
-    price: foodPriceInput,
+    price: foodPriceInput
   });
   if (foodPriceInput < 1) {
     listFoods == false;
     alert("Prisen kan ikke være null!");
   }
 
+  
   listFoods();
-  sumPrice.innerHTML += `Sum = ${(listArray, foodPriceInput)}`;
-  console.log(listArray, foodPriceInput);
+  
 }
 
 function listFoods() {
@@ -42,4 +47,5 @@ function deleteFood(i) {
     listFoods();
   }
 }
+
 
