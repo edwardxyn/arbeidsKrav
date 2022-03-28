@@ -14,31 +14,41 @@ listArray = [];
 function addFood() {
   let foodNameInput = document.getElementById("food-name-input").value;
   let foodPriceInput = document.getElementById("food-price-input").value;
-  
-  
-  
-  listArray.push({
-    name: foodNameInput,
-    price: foodPriceInput
-  });
-  if (foodPriceInput < 1) {
-    listFoods == false;
-    alert("Prisen kan ikke være null!");
+
+  if (foodPriceInput <= 0) {
+    alert("Prisen kan ikke være 0");
+  } else {
+    listArray.push({ 
+      name: foodNameInput, 
+      price: foodPriceInput 
+    });
   }
 
-  
   listFoods();
-  
 }
 
 function listFoods() {
   foodList.innerHTML = "";
+  
+  calculatePrice();
+  
   for (let i = 0; i < listArray.length; i++) {
     foodList.innerHTML += `<li><h1>${listArray[i].name}</h1>
         <h2>${listArray[i].price}</h2>
         <button id="delete-btn" onclick="deleteFood(${i})">Slett</button></li>`;
   }
+
 }
+
+function calculatePrice() {
+   let totalPrice = document.getElementById("total-price");
+    let sum = 0;
+
+    for (let i = 0; i < listArray.length; i++) {
+      sum += parseInt(listArray[i].price)
+    }
+    totalPrice.innerText = `Totalpris: ${sum}`;
+ }
 
 function deleteFood(i) {
   var check = confirm("Er du sikker?");
